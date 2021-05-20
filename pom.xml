@@ -83,13 +83,18 @@
     <artifactId>extentreports</artifactId>
     <version>2.41.2</version>
 </dependency> 
+
 <dependency> 
     <groupId>com.apple</groupId>
          <artifactId>AppleJavaExtensions</artifactId> 
-             <version>1.4</version> 
+         <version>1.4</version> 
 </dependency>
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
- 
+   <dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.8.1</version>
+  <type>maven-plugin</type>
+</dependency>
     
   </dependencies>
 
@@ -106,6 +111,17 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+        
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+        
+        
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
