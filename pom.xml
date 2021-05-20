@@ -12,11 +12,7 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+
 
   <dependencies>
 
@@ -115,10 +111,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
-          <verbose>true</verbose>
-          <fork>true</fork>
-          <executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk</executable>
-          
+         <source>1.8</source>
+          <target>1.8</target>   
         </configuration>
       </plugin>
         
