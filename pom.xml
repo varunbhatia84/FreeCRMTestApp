@@ -117,7 +117,7 @@
         <configuration>
           <verbose>true</verbose>
           <fork>true</fork>
-          <executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home</executable>
+          <executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk</executable>
           
         </configuration>
       </plugin>
